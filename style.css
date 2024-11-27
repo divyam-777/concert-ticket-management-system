@@ -1,0 +1,198 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #1e1f26, #2c2f33);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #2f3136;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(135deg, #5865f2, #7289da);
+    padding: 30px;
+    border-radius: 12px 12px 0 0;
+    color: #ffffff;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  header p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+    opacity: 0.8;
+  }
+  
+  /* Main Sections */
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #b9bbbe;
+    font-weight: 600;
+  }
+  
+  /* Form Group */
+  .form-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  input, select {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background: #40444b;
+    color: #ffffff;
+    transition: background 0.3s;
+  }
+  
+  input::placeholder {
+    color: #b9bbbe;
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    background: #5865f2;
+  }
+  
+  select {
+    cursor: pointer;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn.primary {
+    background: #5865f2;
+    color: #ffffff;
+  }
+  
+  .btn.primary:hover {
+    background: #404eed;
+  }
+  
+  .btn.secondary {
+    background: #b9bbbe;
+    color: #23272a;
+  }
+  
+  .btn.secondary:hover {
+    background: #5865f2;
+    color: #ffffff;
+  }
+  
+  /* Waiting List */
+  .waiting-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .waiting-list li {
+    background: #40444b;
+    padding: 15px;
+    margin: 8px 0;
+    border: 1px solid #5865f2;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 1.5;
+  }
+  
+  .waiting-list .vvip {
+    border-color: #f1c40f;
+    background: #f1c40f;
+    color: #23272a;
+    font-weight: bold;
+  }
+  
+  /* Ticket Display */
+  .ticket-display {
+    margin-top: 20px;
+    padding: 20px;
+    background: #40444b;
+    border-radius: 10px;
+  }
+  
+  .ticket-display h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #b9bbbe;
+  }
+  
+  .ticket-display p {
+    font-size: 1.3rem;
+    margin: 0;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: linear-gradient(135deg, #7289da, #5865f2);
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border-radius: 0 0 12px 12px;
+  }
+  
+  /* Interactive Transitions */
+  input:focus, select:focus {
+    box-shadow: 0 0 8px rgba(88, 101, 242, 0.8);
+  }
+  
+  .waiting-list li:hover {
+    background: rgba(88, 101, 242, 0.9);
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Withdraw Section */
+  .withdraw-section .form-group input {
+    width: 300px;
+  }
+  
+  .withdraw-section button {
+    width: 150px;
+    margin-top: 15px;
+  }
+  
+  

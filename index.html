@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concert Booking System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Concert Booking</h1>
+      <p>Get your ticket for the ultimate experience!</p>
+    </header>
+
+    <main>
+      <section class="booking-section">
+        <h2>Join the Queue</h2>
+        <div class="form-group">
+          <input type="text" id="userName" placeholder="Enter your name" />
+          <input type="text" id="userId" placeholder="Enter your unique ID" />
+          <select id="userType">
+            <option value="regular">Regular</option>
+            <option value="vvip">VVIP</option>
+          </select>
+          <button class="btn primary" onclick="addToQueue()">Join Queue</button>
+        </div>
+      </section>
+
+      <section class="queue-section">
+        <h2>Waiting List</h2>
+        <ul id="waitingList" class="waiting-list">
+          <li>No one in the queue yet. Be the first!</li>
+        </ul>
+      </section>
+
+      <section class="withdraw-section">
+        <h2>Withdraw Ticket</h2>
+        <div class="form-group">
+          <input type="text" id="withdrawId" placeholder="Enter your unique ID to withdraw" />
+          <button class="btn secondary" onclick="withdrawTicket()">Withdraw</button>
+        </div>
+      </section>
+
+      <section class="issue-section">
+        <h2>Issue Tickets</h2>
+        <button class="btn secondary" onclick="issueTicket()">Issue Next Ticket</button>
+        <div class="ticket-display">
+          <h3>Issued Ticket</h3>
+          <p id="issuedTicket">None</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Concert Systems. Experience Excellence.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
